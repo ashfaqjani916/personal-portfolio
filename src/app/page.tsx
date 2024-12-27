@@ -15,7 +15,7 @@ export default function Home() {
         <ToggleBtn />
       </div>
 
-      <div className="w-full md:h-[500px] my-3 gap-3 flex ">
+      <div className="w-full md:h-[610px] my-3 gap-3 flex ">
         <div className="h-full w-2/6 flex flex-col justify-between p-5 bg-gray-200  rounded-2xl">
           <div className="text-2xl">
             <h1>One Step at a Time.</h1>
@@ -36,23 +36,24 @@ export default function Home() {
           <div className="w-full h-1/2 flex flex-col justify-between p-7 bg-gray-200 rounded-2xl">
             <h1 className="text-3xl font-mono">EST. 2004</h1>
             <div className="flex">
-              <div className="flex flex-col">
+              <div className="flex flex-col mr-2">
                 <p className="text-xs">Born in</p>
-                <p className="text-lg">INDIA</p>
+                <p className="text-2xl  font-mono">INDIA</p>
               </div>
               <Image
-                src="/src/app/flag.jpg"
-                width={50}
-                height={50}
+                src="/flag.jpg"
+                width={60}
+                height={15}
                 alt=" "
               />
             </div>
           </div>
           <div className="w-full h-1/2 bg-gray-200 rounded-2xl">
             <Image
-              src="/src/public/dp.jpeg"
-              width={50}
-              height={50}
+              className="rounded-2xl"
+              src="/dp.jpeg"
+              width={300}
+              height={300}
               alt=" "
             />
           </div>
@@ -69,14 +70,15 @@ export default function Home() {
 
       <div className="w-full h-96 mb-3  flex gap-3">
         <div className="w-2/3 h-full rounded-2xl flex justify-center items-center bg-[#D7FFD0]">
-          <h1 className="text-[80px] leading-snug">
+          <h1 className="text-[80px] leading-snug ">
             Full-Stack Web Dev by Day,
             <br />
             Aspiring Game Dev by Night.
           </h1>
         </div>
-        <div className=" w-1/3 h-full rounded-2xl bg-gray-200">
-
+        <div className=" w-1/3 h-full rounded-2xl flex flex-col p-5   py-10 bg-gray-200">
+          <p className="mb-8 text-lg">Crafting Interactive Worlds: Fullstack Developer & Game Designer<br /> (Unity)</p>
+          <p>I'm passionate about bringing websites and games to life with a unique blend of technical expertise and artistic vision. As a full-stack developer, I leverage JavaScript, ReactJS, and React to build user-friendly and scalable web applications. But my true passion lies in game design. I'm an aspiring game designer interested in Unity, eager to translate captivating concepts into immersive realities. I see the potential for seamless integration between these seemingly disparate worlds and constantly seek innovative ways to bridge the gap.</p>
         </div>
       </div>
 
@@ -89,12 +91,13 @@ export default function Home() {
 
       <div className="w-full h-[650px] flex gap-3">
         <div className="w-2/3 h-[92%] mt-3 rounded-2xl flex justify-center items-center bg-gray-200">
+          <iframe className="rounded-2xl w-full h-full" src="https://www.youtube.com/embed/n019h9Pp7Vw" title="Cypher Link" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
         </div>
         <div className="w-1/3 h-full -mt-10 rounded-2xl flex justify-center items-center bg-gray-900">
         </div>
       </div>
 
-      <div className="w-full h-[500px] -mt-7 flex  rounded-2xl  justify-center items-center bg-gray-600">
+      <div className="w-full h-[500px] -mt-7 flex  rounded-2xl  justify-center items-center bg-gray-900">
 
       </div>
 
