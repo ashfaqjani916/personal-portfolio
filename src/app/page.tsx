@@ -1,30 +1,67 @@
+'use client'
 import ToggleBtn from "@/components/ToggleBtn";
 import { FaInstagram, FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+import Image from "next/image";
+import { MenuDock } from "@/components/MenuDock";
+import { useState } from "react";
+import { AppleCardsCarouselDemo } from "@/components/worksCarousel";
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="px-8 pt-5 border-red-600 border-2 flex flex-col bg-gray-50 ">
+    <div className="px-8 pt-5  border-2 flex flex-col bg-gray-50 ">
 
       <div className=" flex justify-end w-full">
         <ToggleBtn />
       </div>
 
       <div className="w-full md:h-[500px] my-3 gap-3 flex ">
-        <div className="h-full w-2/6 bg-gray-200  rounded-2xl">
+        <div className="h-full w-2/6 flex flex-col justify-between p-5 bg-gray-200  rounded-2xl">
+          <div className="text-2xl">
+            <h1>One Step at a Time.</h1>
+            <h1>One punch at a Time.</h1>
+            <h1>One Round at a Time.</h1>
+          </div>
+
+          <p>
+            Hi, I’m Ashfaq Jani, <br />
+            Your go-to <u>Web Developer</u> for elevating your brand<br />
+            perception. Let's design the experience you want to see<br />
+            tomorrow.
+          </p>
 
         </div>
 
         <div className=" h-full w-1/6 flex flex-col gap-3 ">
-          <div className="w-full h-1/2 bg-gray-200 rounded-2xl">
-
+          <div className="w-full h-1/2 flex flex-col justify-between p-7 bg-gray-200 rounded-2xl">
+            <h1 className="text-3xl font-mono">EST. 2004</h1>
+            <div className="flex">
+              <div className="flex flex-col">
+                <p className="text-xs">Born in</p>
+                <p className="text-lg">INDIA</p>
+              </div>
+              <Image
+                src="/src/app/flag.jpg"
+                width={50}
+                height={50}
+                alt=" "
+              />
+            </div>
           </div>
           <div className="w-full h-1/2 bg-gray-200 rounded-2xl">
-
+            <Image
+              src="/src/public/dp.jpeg"
+              width={50}
+              height={50}
+              alt=" "
+            />
           </div>
         </div>
 
-        <div className=" h-full w-3/6 bg-gray-200 rounded-2xl">
-
+        {/* this is the menu component  */}
+        <div className=" h-full w-3/6 bg-gray-200 flex flex-col items-end p-7 justify-between rounded-2xl">
+          <h1 className="text-3xl font-mono hover:cursor-pointer" >MENU +</h1>
+          <MenuDock />
         </div>
 
       </div>
@@ -61,26 +98,8 @@ export default function Home() {
 
       </div>
 
-      <div className="w-full h-[500px] mt-3 flex mb-3 overflow-y-scroll  gap-3 ">
-        <div className="w-[480px] h-full rounded-2xl flex   bg-gray-200">
-        </div>
-        <div className="w-[480px] h-full rounded-2xl flex   bg-gray-200">
-        </div>
-        <div className="w-[480px] h-full rounded-2xl flex   bg-gray-200">
-        </div>
-        <div className="w-[480px] h-full rounded-2xl flex   bg-gray-200">
-        </div>
-        <div className="w-[480px] h-full rounded-2xl flex   bg-gray-200">
-        </div>
-        <div className="w-[480px] h-full rounded-2xl flex   bg-gray-200">
-        </div>
-        <div className="w-[480px] h-full rounded-2xl flex   bg-gray-200">
-        </div>
-        <div className="w-[480px] h-full rounded-2xl flex   bg-gray-200">
-        </div>
-        <div className="w-[480px] h-full rounded-2xl flex   bg-gray-200">
-        </div>
-      </div>
+
+      <AppleCardsCarouselDemo />
 
       <div className="w-full h-[450px] rounded-2xl flex  bg-[#D7FFD0]">
         contact
