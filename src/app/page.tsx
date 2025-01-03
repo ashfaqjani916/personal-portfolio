@@ -1,10 +1,10 @@
-"use client";
-import ToggleBtn from "@/components/ToggleBtn";
-import { FaInstagram, FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
-import Image from "next/image";
-import { MenuDock } from "@/components/MenuDock";
+'use client'
+import ToggleBtn from '@/components/ToggleBtn'
+import { FaInstagram, FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa'
+import Image from 'next/image'
+import { MenuDock } from '@/components/MenuDock'
 // import { useState } from "react";
-import { AppleCardsCarouselDemo } from "@/components/worksCarousel";
+import { AppleCardsCarouselDemo } from '@/components/worksCarousel'
 
 export default function Home() {
   // const [menuOpen, setMenuOpen] = useState(false);
@@ -26,7 +26,7 @@ export default function Home() {
             Hi, I’m Ashfaq Jani, <br />
             Your go-to <u>Web Developer</u> for elevating your brand
             <br />
-            perception. Let's design the experience you want to see
+            perception. Let&apos;s design the experience you want to see
             <br />
             tomorrow.
           </p>
@@ -44,13 +44,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full h-1/2 bg-gray-200 dark:border-gray-200 dark:border-2 dark:bg-gray-900 rounded-2xl">
-            <Image
-              className="rounded-2xl"
-              src="/dp.jpeg"
-              width={300}
-              height={300}
-              alt=" "
-            />
+            <Image className="rounded-2xl" src="/dp.jpeg" width={300} height={300} alt=" " />
           </div>
         </div>
 
@@ -75,24 +69,16 @@ export default function Home() {
             <br /> (Unity)
           </p>
           <p>
-            I'm passionate about bringing websites and games to life with a
-            unique blend of technical expertise and artistic vision. As a
-            full-stack developer, I leverage JavaScript, ReactJS, and React to
-            build user-friendly and scalable web applications. But my true
-            passion lies in game design. I'm an aspiring game designer
-            interested in Unity, eager to translate captivating concepts into
-            immersive realities. I see the potential for seamless integration
-            between these seemingly disparate worlds and constantly seek
-            innovative ways to bridge the gap.
+            I&apos;m passionate about bringing websites and games to life with a unique blend of technical expertise and artistic vision. As a full-stack developer, I leverage JavaScript, ReactJS, and
+            React to build user-friendly and scalable web applications. But my true passion lies in game design. I&apos;m an aspiring game designer interested in Unity, eager to translate captivating
+            concepts into immersive realities. I see the potential for seamless integration between these seemingly disparate worlds and constantly seek innovative ways to bridge the gap.
           </p>
         </div>
       </div>
 
       <div className="w-full h-96  flex gap-3">
         <div className="w-1/3 h-full rounded-2xl p-10 flex justify-center items-center bg-gray-200 dark:border-gray-200 dark:border-2 dark:bg-gray-900">
-          <h1 className="text-[60px]  leading-snug ">
-            What are the things I can help you with?
-          </h1>
+          <h1 className="text-[60px]  leading-snug ">What are the things I can help you with?</h1>
         </div>
         <div className="w-2/3 h-full rounded-2xl flex justify-center items-center bg-gray-900 dark:border-gray-200 dark:border-2 dark:bg-gray-900"></div>
       </div>
@@ -113,50 +99,31 @@ export default function Home() {
 
       <AppleCardsCarouselDemo />
 
-      <div className="w-full h-[450px] rounded-2xl flex  bg-[#D7FFD0] dark:text-black">
-        contact
-      </div>
+      <div className="w-full h-[450px] rounded-2xl flex  bg-[#D7FFD0] dark:text-black">contact</div>
 
       <div className=" w-full flex mb-5 mt-20  justify-between">
         <p>
           &copy; {new Date().getFullYear()}
-          <a href="https://github.com/ashfaqjani916">Ashfaq Jani.</a> All rights
-          reserved.
+          <a href="https://github.com/ashfaqjani916">Ashfaq Jani.</a> All rights reserved.
         </p>
 
         <div className="flex gap-2">
           <div className="flex gap-2">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={30} />
             </a>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
               <FaGithub size={30} />
             </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter size={30} />
             </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={30} />
             </a>
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }

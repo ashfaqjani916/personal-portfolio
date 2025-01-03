@@ -1,30 +1,30 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import { GeistSans } from 'geist/font/sans';
+import type { Metadata } from 'next'
+// import localFont from 'next/font/local'
+import { GeistSans } from 'geist/font/sans'
 // import { GeistMono } from 'geist/font/mono';
 
-import "./globals.css";
+import './globals.css'
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+// const geistMono = localFont({
+//   src: "./fonts/GeistMonoVF.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
 
 export const metadata: Metadata = {
-  title: "Ashfaq Jani",
-  description: "Personal porfolio of Ashfaq Jani",
-};
+  title: 'Ashfaq Jani',
+  description: 'Personal porfolio of Ashfaq Jani',
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en" className={GeistSans.className}>
@@ -33,6 +33,6 @@ export default function RootLayout({
       >
         {children}
       </body>
-    </html >
-  );
+    </html>
+  )
 }
